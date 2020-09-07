@@ -1,5 +1,5 @@
-- Name:  *write your full name*
-- Date:  *write the date of submission*
+- Name:  Will Cody
+- Date:  9/14
 
 
 # Introduction to ROS -- Self Study
@@ -25,11 +25,19 @@
 Just read this chapter...**DO NOT INSTALL ANYTHING**. Your virtual machine already has the software loaded and configured for you.  
 
 
-- Unanswered Questions:
-	- [I suggest making a bullet list of questions here]
+- Questions
+	-Do coders make money off ROSS
+	-What is Unix
+	-How do you have multiple languages at once
+	-Why Linux
+	-What is POSIX
 	
 - Answered Questions and/or General notes
-	- [Again, bulleted lists are pretty nice]	
+	-Messages are flattened
+	-Developers have firewalls to commercialize
+	-POSIX is for portability
+	-Linux is easy to install and work with
+	-ROS is a framework
 
 
 ---
@@ -39,8 +47,28 @@ Just read this chapter...**DO NOT INSTALL ANYTHING**. Your virtual machine alrea
 Just read this chapter...**DO NOT INSTALL ANYTHING**. Your virtual machine already has the software loaded and configured for you.  
 
 - Unanswered Questions:
+	-Can ROS be done offline
+	-What language is roscore
+	-What is a CMake macro or custom Python script
+	-Why only one Workspace
+	-What is XML
+	-how does tf work
 	
 - Answered Questions and/or General notes
+	-ROS was created as it was noticed many subsystems could run on many robots
+	-ROS displays the programs as a "graph" with many connected nodes
+	-Nodes are modules that are sending/receiving messages
+	-Modules can be swapped with no major effect
+	-Nodes find each other in roscore
+	-Anyone can make or get packages which are sections of code for a purpose
+	-rosrun runs packages
+	-Each node is anonymous to another
+	-Namespaces allow better labelling
+	-remapping allows named variables to be better labelled and made more specific
+	-roslaunch automated launching of collections of ROS nodes
+	-TAB auto-completes what is being typed
+	-pose tells the x,y,z and orientation
+	-tf 
 
 
 ---
@@ -48,24 +76,58 @@ Just read this chapter...**DO NOT INSTALL ANYTHING**. Your virtual machine alrea
 ### Chapter 3 -- Topics
 
 - Unanswered Questions:
+	-How do you document chmod
+	-How does documenting topics work
+	-What is a tuple
+	-Don't understand defining new messages
+	-What is TCP port
 	
 - Answered Questions and/or General notes
+	-Topic is stream of messages with a defined type
+	-publish sends subscribe receives
+	-Messages on same topic must be same data type
+	-Ctrl-C stops rostopic and other programs
+	-Latched topics allow subscribers to get the last message sent
+	-std_msgs package defines primitve message types
+	-C++ has more native data types than Python
+	-Only make new message types when you absolutely have to
+	
 
 ---
 
 ### Chapter 4 -- Services	
 
 - Unanswered Questions:
+	-What does WordCount do
+	-What are callbacks
+	-How do proxy functions work
+	-
 	
 - Answered Questions and/or General notes
+	-Services are synchronous remote procedure calls
+	-Services are good for things done occasionally and that take bounded amount of time
+	-Three --- mark end of inputs and start of outputs
+	-All services can be seen with rossrv
+	-rosserivce to use a service
+	-can only use advertised services
 
 ---
 
 ### Chapter 5 -- Actions
 
 - Unanswered Questions:
+	-How are the mechanizisms of the action explicitley defined? Preset actions?
+	-Are most of these example commands created objects or Python or packages?
+	-How do servers work?
 	
 - Answered Questions and/or General notes
+	-Services are for simple interactions
+	-Actions are to implement interfaces with time-extended goal oriented behaviors
+	-Actions are asynchronous
+	-Actions have goals, results and feedback
+	-Actions use topics
+	-Disable autostarting
+	-Can abort actions
 
 
 ---
